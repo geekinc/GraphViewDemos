@@ -15,52 +15,16 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		((Button) findViewById(R.id.btn_simple)).setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startGraphActivity(SimpleGraph.class);
-			}
-		});
 		((Button) findViewById(R.id.btn_advanced)).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				startGraphActivity(AdvancedGraph.class);
 			}
 		});
-		((Button) findViewById(R.id.btn_muliple_series)).setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startGraphActivity(AdvancedMultipleSeriesGraph.class);
-			}
-		});
 		((Button) findViewById(R.id.btn_realtime)).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				startGraphActivity(RealtimeGraph.class);
-			}
-		});
-		((Button) findViewById(R.id.btn_styles)).setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startGraphActivity(StylesGraph.class);
-			}
-		});
-		((Button) findViewById(R.id.btn_removeadd)).setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startGraphActivity(RemoveAddSeries.class);
-			}
-		});
-		((Button) findViewById(R.id.btn_customlabelformatter)).setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startGraphActivity(CustomLabelFormatterActivity.class);
-			}
-		});
-		((Button) findViewById(R.id.btn_ownmodelasdata)).setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				startGraphActivity(OwnModelAsData.class);
 			}
 		});
 	}
